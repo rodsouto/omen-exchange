@@ -100,16 +100,16 @@ export const pseudoNativeAssetAddress = '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeE
 export const networks: { [K in NetworkId]: Network } = {
   [networkIds.MAINNET]: {
     label: 'Mainnet',
-    url: `https://mainnet.infura.io/v3/${INFURA_PROJECT_ID}`,
+    url: `https://eth.llamarpc.com/`,
     alternativeUrls: [
       {
-        rpcUrl: `https://mainnet.infura.io/v3/${INFURA_PROJECT_ID}`,
-        name: 'Infura',
+        rpcUrl: `https://eth.llamarpc.com/`,
+        name: 'Llama RPC',
       },
-      { rpcUrl: 'https://cloudflare-eth.com/', name: 'Cloudflare' },
+      { rpcUrl: 'https://rpc.ankr.com/eth/', name: 'Ankr' },
       {
-        rpcUrl: `https://eth-mainnet.gateway.pokt.network/v1/lb/61116f89a585a200351491db`,
-        name: 'Pokt',
+        rpcUrl: `https://eth-mainnet.public.blastapi.io`,
+        name: 'Blast API',
       },
     ],
     graphHttpUri: GRAPH_MAINNET_HTTP,
@@ -255,20 +255,20 @@ export const networks: { [K in NetworkId]: Network } = {
     blockExplorerURL: 'https://blockscout.com/poa/sokol',
   },
   [networkIds.XDAI]: {
-    label: 'xDai',
-    url: 'https://rpc.xdaichain.com/',
+    label: 'Gnosis Chain',
+    url: 'https://rpc.gnosischain.com/',
     alternativeUrls: [
       {
-        rpcUrl: 'https://rpc.xdaichain.com/',
-        name: 'xDai',
+        rpcUrl: 'https://rpc.gnosischain.com/',
+        name: 'Gnosis Chain',
       },
       {
-        rpcUrl: 'https://dai.poa.network/',
-        name: 'Blockscout',
+        rpcUrl: 'https://rpc.ankr.com/gnosis/',
+        name: 'Ankr',
       },
       {
-        rpcUrl: 'https://poa-xdai.gateway.pokt.network/v1/lb/6111748ba585a2003514997b',
-        name: 'Pokt',
+        rpcUrl: 'https://gnosis-mainnet.public.blastapi.io',
+        name: 'Blast API',
       },
     ],
     graphHttpUri: GRAPH_XDAI_HTTP,
